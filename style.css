@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#primo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#lente{
+     width: 30px;
+     margin-left: 43px;
+     margin-top: 25px;
+     object-fit: scale-down;
+     cursor: pointer; 
+     
+}
+
+
+h1{ 
+    font-size: 64px;
+    margin-top: 30px;
+    font-weight: 700;
+    margin-left: 250px;
+}
+
+#biglietti{
+    display: flex;
+    margin-right: 43px;
+    margin-top: 45px;
+
+}
+
+.tickets{
+    margin-right: 43px;
+    font-size: 18px;
+    background-color: #dc924b;
+    border-radius: 30px;
+    width: 125px;
+    height: 30px;
+    padding-top: 8px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+     
+       
+}
+
+.tickets:hover{
+    background-color: #864608;}
+
+.members{
+    
+    font-size: 18px;
+    border:1px solid;
+    border-radius: 30px;
+    width: 87px;
+    height: 29px;
+    padding-top: 7px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+     
+}
+
+.members:hover{
+    background-color: #c0b6ac;}
+
+
+nav ul { 
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-left: 46px;}
+
+nav ul li{ 
+    font-size: 25px;
+    margin-right: 46px;
+    cursor: pointer;
+    
+    display: inline-block;
+     position: relative;
+    }
+
+nav ul li::before{
+     content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom:0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+    
+#themuseum{
+    margin-top: 100px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#covid{
+    background-color: #f8f8f8;
+    height: 230px;
+    margin-top: 150px;
+    
+}
+
+.vaccination{
+    font-size: 25px;
+    margin-top: 43px;
+    margin-left: 43px;
+}
+
+.learn{
+    margin-top: 60px;
+    font-size: 20px;
+    margin-left: 43px;
+    cursor: pointer;
+}
+
+.covidfreccia{
+    width:35px;
+    object-fit: scale-down;
+    margin-top: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+    padding-left: 0;
+    
+}
+
+.covidfreccia:hover{
+    padding-left: 24px;
+}
+
+#covid2{
+    display: flex;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: 500;
+    margin-left: 150px;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#exbhition{
+     position: relative;
+     
+}
+
+.car{
+    
+    position: absolute;
+    margin-left: 153px;
+    margin-right: 150px;
+    width: 1050px;
+    display: block;
+    justify-content: center;
+    border: 10px solid #78062a;padding: 20px; 
+    cursor: pointer;
+     
+}
+
+
+#testo{
+    margin-left: 200px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.ex{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 235px;
+    
+    
+}
+
+.autonomia{
+    position: absolute;
+    font-size: 45px;
+    margin-top: 270px;
+}
+
+.data{
+    position: absolute;
+    font-size: 15px;
+    margin-top: 340px;
+    font-weight: 300;
+}
+
+.moma2{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 400px;
+}
+
+#freccecar{
+    display: flex;
+    justify-content: center;
+    margin-top: 480px;
+    margin-bottom: 80px;
+    
+}
+
+.six{
+    width:35px;
+    object-fit: scale-down;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+
+.dex{
+    width:35px;
+    object-fit: scale-down;
+    margin-top: 60px;
+   margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+    padding-left: 0;
+}
+
+.dex:hover{
+    padding-left: 24px;
+}
+
+
+#events{
+    background-color: #efd54e;
+}
+#eventsfoto{
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+#eventsfoto1{
+   margin-right: 20px; 
+    margin-left: 155px;
+}
+    
+.events1{
+    width: 530px; 
+}
+
+.testo1{
+    font-size: 20px;
+    cursor: pointer;
+      
+}
+
+.testo1-2{
+    margin-top: 20px;
+    font-size: 20px;  
+    cursor: pointer;
+}
+
+#eventsfoto2{
+    margin-left: 20px;
+    margin-right: 155px;
+}
+
+.events2{
+    width: 530px; 
+}
+
+.testo2{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.testo2-2{
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+#eventsefreccia{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+     margin-bottom: 50px;
+}
+
+.endevents{
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.frecciaeventi{
+    margin-left: 20px;
+    display: flex;
+    width:35px;
+    object-fit: scale-down;
+    cursor: pointer;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+    padding-left: 0;
+    
+}
+
+.frecciaeventi:hover{
+    padding-left: 24px;
+}
+
+
+.magazinefoto{
+    width: 1130px;
+    margin-left: 150px;
+    position: absolute;
+}
+
+#magazine{
+    position: relative;
+    height: 850px;
+    
+}
+#testomagazine{
+    position: absolute;
+    margin-left: 800px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 400px;
+    cursor: pointer;
+}
+.sophie{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.watch{
+    margin-top: 30px;
+}
+
+.isabel{
+    margin-top: 40px;
+}
+
+#collection{
+    color: white;
+    background-color:#365945;
+    
+    
+}
+
+
+.row{
+    display: flex;
+    margin-left: 150px;
+}
+
+.imgcollection{
+  margin-right: 20px;
+    width: 350px; 
+    
+}
+
+.row{
+    display: flex;
+    margin-top: 20px;
+}
+
+.firstcolumn{
+    margin-right: 20px;
+}
+
+.imgcoll1{
+    width: 550px;
+    margin-bottom: 20px;
+    
+}
+.imgcoll2{
+    width: 520px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+#testocollection{
+    display: flex;
+    justify-content: center;
+     margin-bottom: 50px;
+    color: white
+}
+
+.see{
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+.seefreccia{
+    margin-top: 75px;
+    margin-left: 20px;
+    display: flex;
+    width:35px;
+    object-fit: scale-down;
+    cursor: pointer;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+    padding-left: 0;
+    
+}
+
+.seefreccia:hover{
+    padding-left: 24px;
+}
+
+#store{
+    display: flex;
+    margin-left: 150px;
+    
+  
+}
+
+.imgstore{
+    width: 550px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: #4b4d4d;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#icone{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    
+}
+
+.imgicone1{
+    object-fit: scale-down;
+    width: 80px;
+    margin-right: 50px;
+}
+
+.imgicone2{
+    object-fit: scale-down;
+    width: 100px;
+    margin-right: 50px;
+}
+
+.imgicone3{
+    object-fit: scale-down;
+    width: 50px;
+    margin-right: 50px;
+}
+
+.imgicone4{
+    object-fit: scale-down;
+    width: 100px;
+    margin-right: 50px;
+}
+
+.imgicone5{
+    object-fit: scale-down;
+    width: 200px;
+    margin-right: 50px;
+}
+
+.imgicone6{
+    object-fit: scale-down;
+    width: 100px;
+}
+
+footer{
+    color: white;
+    background-color: #4b4d4d;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+#footergreymenu{
+    display: flex;
+    justify-content: center;
+}
+
+.footermenu{
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+.footermenu:hover{
+    text-decoration:underline;
+    
+}
+
+#footerorari{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.footermoma{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.footerstreet{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#footerorari1{
+    margin-right: 80px;
+}
+#footerorari2{
+    margin-left: 80px;
+}
+
+#footerorari{
+    margin-top: 80px;
+}
+
+#footericonemoma{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.footericone{
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.footericone1{
+    width: 30px;
+    object-fit: scale-down;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 0.5;
+    opacity: 0.6 ;	
+    cursor: pointer;
+}
+.footericone1:hover{opacity:1;
+}
+
+#boxcontainer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border:1px solid;
+    
+    
+}
+
+.posta{
+    width: 25px;
+    object-fit: scale-down;
+    margin-left: 40px;
+}
+
+.footermoma2{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#momaprivacy{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.privacy{
+    margin-right: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.privacy:hover{
+    text-decoration: underline;
+}
+
+#museum{
+    display: flex;
+    margin-left: 330px;
+    padding-bottom: 40px;
+}
+
+.c{
+    width: 20px;
+    object-fit: scale-down;
+    margin-top: 80px;
+}
+
+.endmuseum{
+    font-weight: 300;
+    color: #c2c0c0;
+    margin-top: 80px;
+    margin-left: 10px;
+    
+}
